@@ -1,0 +1,28 @@
+.table-container {
+  padding: 20px;
+}
+
+.order-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f0f0f0;
+}
+
+.order-table-header {
+  padding: 10px;
+  background-color: #C0D9A1;
+  color: white;
+}
+
+.order-table th,
+.order-table td {
+  font-weight: normal;
+  padding: 10px;
+  border: 1px solid #000000;
+  color: #000;
+}
+
+.status-dropdown {
+  padding: 5px;
+  border: 1px solid #ddd;
+}

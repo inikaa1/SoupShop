@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img{
+    max-height: 100%;
+}
+
+input, textarea, select{
+    @apply border-2 border-[#e8eff2] rounded-md px-1 w-full mb-2;
+}
+input:focus, textarea:focus, select:focus,
+input:focus-visible, textarea:focus-visible, select:focus-visible {
+    outline: none;
+    @apply border-[#59654E];
+}
+
+h1{
+    @apply text-[#59654E] mb-2 text-xl;
+}
+
+layout{
+    @apply text-[#59654E];
+}
+.btn-primary{
+    @apply bg-[#59654E] text-[#F5F5F2] px-4 py-2 rounded-md;
+}
+.btn-secondary{
+    @apply bg-[#59654E] text-[#F5F5F2] px-4 py-2 rounded-md bg-opacity-50;
+}
+.btn-primary:hover, .btn-secondary:hover{
+    @apply bg-[#424E28];
+}
+
+.btn-red{
+    @apply bg-[#C44D51] text-[#F5F5F2] px-4 py-2 rounded-md;
+}
+.btn-red:hover{
+    @apply bg-[#a13a3d];
+}
+
+.btn-alert{
+    @apply mx-1;
+}
+
+table.basic{
+    @apply w-full;
+}
+
+table.basic thead tr td {
+    @apply bg-[#C0D9A1];
+}
+
+table.basic tr td {
+    @apply border border-t-[#59654E] border-b-[#59654E] p-1 bg-[#F5F5F2] bg-opacity-20;
+}
+
+table.basic tr td:last-of-type {
+    @apply border-r-[#59654E] border-l-transparent;
+}
+table.basic tr td:first-of-type {
+    @apply border-r-transparent border-l-[#59654E]; 
+}
+table.basic tr td:not(:first-of-type) {
+    @apply border-l-[#59654E];
+}
+table.basic tr td:not(:first-of-type):not(:last-of-type) {
+    @apply border-l-transparent border-r-transparent;
+}
+
+
+.dashboardContainer{
+    @apply flex gap-3 flex-col;
+}
+.rowContainer{
+    @apply max-sm:flex-col flex gap-3 mb-5;
+}
+.card{
+    @apply bg-[#F5F5F2] rounded-md shadow-md p-5 sm:w-1/2 box-border mx-3;
+}
+.card-header h2 {
+    @apply m-0 text-lg text-gray-900;
+}
